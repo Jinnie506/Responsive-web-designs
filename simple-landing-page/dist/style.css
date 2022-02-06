@@ -1,0 +1,102 @@
+html{
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  color: white;
+  width: 100%;
+  top: 0;
+  height: 85px
+}
+
+
+#header-img {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  max-height: 60%;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 100px;
+  padding: 2px;
+}
+
+nav ul li a {
+  color: green;
+  font-size: 0.95em;
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+nav ul li a:hover {
+  color: #F2385A;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-image: url("https://ifc-solutions.com/wp-content/uploads/cosmetics-organic.jpg");
+  background-size: cover;
+  color: green;
+  align-items: center;
+  height: 250px;
+  text-weight: 700;
+}
+h1 {
+  padding: 45px;
+}
+#About-us {
+  text-align: center;
+  text-weight: 250;
+  padding: 40px;
+}
+.hair {
+  background-color: #6F2518;
+  color: white;
+  padding: 20px
+}
+#how-its-made {
+  text-align: center;
+  padding: 40px;
+}
+#products {
+  text-align: center;
+  padding: 20px;
+}
+.product-img {
+  height: 200px;
+  padding: 20px
+}
+.hair-img {
+  display: flex;
+  justify-content: center;
+}
+#newsletter {
+  width: 200px;
+  background-color: #6F2518;
+  padding: 30px;
+  color: white;
+  margin: 40px;
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 15px;
+  }
+  nav ul li a {
+  color: green;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-right: 8px;
+  top: 0;
+}
+}

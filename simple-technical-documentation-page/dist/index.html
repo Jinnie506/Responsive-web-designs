@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>Introduction to Git</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Setup_instructions">Setup instructions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Configuring_your_name_and_email">Configuring your name and email</a>
+       </li>
+       <li><a class="nav-link" href="#Repositories">Repositories</a></li>
+       <li><a class="nav-link" href="#Staging_and_committing_code">Staging and committing code</a></li>
+       <li><a class="nav-link" href="#Checking_status">Checking status</a></li>
+       <li><a class="nav-link" href="#Staging_files">Staging files</a></li>
+       <li><a class="nav-link" href="#Making_commits">Making commits</a></li>
+       <li><a class="nav-link" href="#Commit_history">Commit history</a></li>
+       <li><a class="nav-link" href="#Ignoring_files">Ignoring files</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>Git is officially defined as a distributed version control system (VCS).
+In other words, it's a system that tracks changes to our project files over time. It enables us to record project changes and go back to a specific version of the tracked files, at any given point in time. This system can be used by many people to efficiently work together and collaborate on team projects, where each developer can have their own version of the project, distributed on their computer. Later on, these individual versions of the project can be merged and adapted into the main version of the project.
+Basically, it's a massively popular tool for coordinating parallel work and managing projects among individuals and teams. Needless to say, knowing how to use Git is one of the most important skills for any developer nowadays - and it's definitely a great addition to your resume!</p>
+      </article>
+     </section>
+     <section class="main-section" id="Setup_instructions">
+       <header>Setup instructions</header>
+       <article>
+         <p>Git is primarily used via the command-line interface, which we can access with our system terminals.
+However, we first need to make sure that we have Git installed on our computers.
+You can download Git here: <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></p>
+         <p>Click the download link for your specific operating system and then follow through the installation wizard to get things set up on your computer!
+After installing it, start your terminal and type the following command to verify that Git is ready to be used on your computer: <code>git --version</code></p>
+       </article>
+      </section>
+      <section class="main-section" id="Configuring_your_name_and_email">
+        <header>Configuring your name and email</header>
+        <article><p>In your terminal, run the following commands to identify yourself with Git:<br>
+          <code>git config --global user.name "Your Name" <br>git config --global user.email "your@email.com"</code></p>
+        </article>
+      </section>
+      <section class="main-section" id="Repositories">
+        <header>Repositories</header>
+        <article>
+          <p>When working with Git, it's important to be familiar with the term repository. A Git repository is a container for a project that is tracked by Git. 
+We can single out two major types of Git repositories:
+            <ul>
+              <li><strong>Local repository</strong> - an isolated repository stored on your own computer, where you can work on the local version of your project.</li>
+              <li><strong>Remote repository</strong> - generally stored outside of your isolated local system, usually on a remote server. It's especially useful when working in teams - this is the place where you can share your project code, see other people's code and integrate it into your local version of the project, and also push your changes to the remote repository.</li>
+          </ul>
+In this article, we'll only work with local repositories.
+          To create a new repository and start tracking your project with Git, use your terminal software and navigate to the main folder of your project, then type the following command:
+          <code>git init</code>
+        </p>
+       </article>
+      </section>
+    <section class="main-section" id="Staging_and_committing_code">
+      <header>Staging and committing code</header>
+      <article>
+        <p>
+          Committing is the process in which the changes are 'officially' added to the Git repository.
+In Git, we can consider commits to be checkpoints, or snapshots of your project at its current state. In other words, we basically save the current version of our code in a commit. We can create as many commits as we need in the commit history, and we can go back and forth between commits to see the different revisions of our project code. That allows us to efficiently manage our progress and track the project as it gets developed.
+Commits are usually created at logical points as we develop our project, usually after adding in specific contents, features or modifications (like new functionalities or bug fixes, for example).
+Before we can commit our code, we need to place it inside the staging area.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Checking_status">
+      <header>Checking status</header>
+      <article>
+        <p>
+          While located inside the project folder in our terminal, we can type the following command to check the status of our repository:<br><code>git status</code><br>This is a command that is very often used when working with Git. It shows us which files have been changed, which files are tracked, etc.
+We can add the untracked project files to the staging area based on the information from the git status command.
+At a later point, git status will report any modifications that we made to our tracked files before we decide to add them to the staging area again.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Staging_files">
+      <header>Staging files</header>
+      <article>
+        <p>
+          From the project folder, we can use the git add command to add our files to the staging area, which allows them to be tracked.
+We can add a specific file to the staging area with the following command:
+          <code>git add file.js</code><br>To add multiple files, we can do this:<br>
+          <code>git add file.js file2.js file3.js</code><br>Instead of having to add the files individually, we can also add all the files inside the project folder to the staging area:<br>
+          <code>git add . </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Making_commits">
+      <header>Making commits</header>
+      <article>
+        <p>
+          A commit is a snapshot of our code at a particular time, which we are saving to the commit history of our repository. After adding all the files that we want to track to the staging area with the `git add` command, we are ready to make a commit.
+To commit the files from the staging area, we use the following command:
+          <code>git commit -m "Commit message"</code><br> 
+Inside the quotes, we should write a commit message which is used to identify it in the commit history.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Commit_history">
+      <header>Commit history</header>
+      <article>
+        <p>
+          <ul>
+            <li>To see all the commits that were made for our project, you can use the following command:<code>git log </code></li>
+            <li>To go back to a previous state of your project code that you committed, you can use the following command:
+              <code>git checkout </code> </li>
+            <li>To go back to the latest commit (the newest version of our project code), you can type this command:
+              <code>git checkout master </code></li>
+          </ul>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Ignoring_files">
+      <header>Ignoring files</header>
+      <article>
+        <p>
+          To ignore files that you don't want to be tracked or added to the staging area, you can create a file called .gitignore in your main project folder.
+Inside of that file, you can list all the file and folder names that you definitely do not want to track (each ignored file and folder should go to a new line inside the .gitignore file).
+        </p>
+      </article>
+    </section>    
+   </main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

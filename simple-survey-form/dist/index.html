@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@0;1&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="text-center" id="title">ALX SE Survey Form</h1>
+        <p id="description" class="description-text-center">Please help us improve our platform by giving us feedback</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Which option best descripes your current role</p>
+          <select id="dropdown" class="form-control" name="role" required>
+            <option disabled selected value>Select your role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>  
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend ALX SE program to a friend?</p>
+          <label>
+            <input name="user-recommend" type="radio" value="definitely" class="input-radio" checked>Definitely
+          </label>
+          <label>
+            <input name="user-recommend" type="radio" value="maybe" class="input-radio">Maybe
+          </label>
+          <label>
+            <input name="user-recommend" type="radio" value="not-sure" class="input-radio">Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite part of ALX SE program?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Pick one</option>
+            <option value="quiz">Quizzes</option>
+            <option value="projects">Projects</option>
+            <option value="liveCode">Live Coding Sessions</option>
+            <option value="community">Community Hangouts</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-End Projects
+          </label>
+          <label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-End Projects
+          </label>
+          <label>
+            <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges
+          </label>
+          <label>
+            <input name="prefer" value="data-algorithms" type="checkbox" class="input-checkbox">Data Algorithms
+          </label>
+          <label>
+            <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Community Hangouts
+          </label>
+          <label>
+            <input name="prefer" value="videos" type="checkbox" class="input-checkbox">Live Coding Sessions
+          </label>
+          <label>
+            <input name="prefer" value="quizzes" type="checkbox" class="input-checkbox">Quizzes
+          </label>
+          <label>
+            <input name="prefer" value="ask-for-help-platforms" type="checkbox" class="input-checkbox">Ask-for-help Platforms
+          </label>
+          <label>
+            <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional courses
+          </label> 
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestion?</p>
+          <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

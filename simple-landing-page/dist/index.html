@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple Landing page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hair Naturals</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <a href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.ORYOf3SOsOepIpfuXOpkfAHaHa&pid=Api&P=0&w=300&h=300" alt="Company logo" id="header-img"></a>
+        <ul class="nav">
+          <li><a href="#About-us" class="nav-link">About Us</a></li>
+          <li><a href="#how-its-made" class="nav-link">How It's Made</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+        </ul>
+      </nav>
+      <div class="slogan">
+        <h1>Hair Naturals</h1>
+        <p>Naturally made to re-invorate your hair from the inside out</p>
+        <button id="course-button">Browse our products</button>
+      </div> 
+    </header>
+    <div class="container">
+      <section>
+      <div id="About-us">
+        <h3>All Natural Hair Formula for Men and Women</h3>
+        <p class="hair">Hair Naturals was formulated specifically to help reduce hair loss and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus, diam id ullamcorper dictum, urna magna ultrices ligula, sed tristique mi leo et sem. Ut efficitur sit amet enim non pellentesque. Vestibulum fringilla accumsan arcu vel accumsan. Nullam et metus neque. Nullam malesuada aliquet congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+    </section>
+    <section>
+      <div id="how-its-made">
+        <h3>How we formulate our products</h3>
+        <iframe id="video" height="315" width="500" src="https://youtu.be/ybcsUb4C2H4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+        </div>
+   </section>
+      <div id="products">
+        <h3>Best sellers</h3>
+        <section class="hair-img">
+          <div>
+            <p>Conditioner</p>
+            <img src="https://sp.yimg.com/ib/th?id=OP.QzygeALZ5c0mzQ474C474&o=5&pid=21.1" alt="Hair conditioner" class="product-img">$33.00
+          </div>
+          <div>
+            <p>Shampoo</p>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.1hz-2TKtzFlgYCXBs1QSUAHaHa&pid=Api&P=0&w=300&h=300" alt="Shampoo" class="product-img">$44.00
+          </div>
+          <div>
+            <p>Moisturizer</p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.3YeOxbrK4seTuuF41UgRpAHaHa&pid=Api&P=0&w=300&h=300" alt="Moisturizer" class="product-img">$30.00
+          </div>
+        </section>
+      </div>
+      <section>
+        <div id="newsletter">
+          <p>Subscribe for HAIR NATURALS News , Exclusive Deals & Free Shipping on First Order:</p>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" name="email" id="email" class="rightcol" placeholder="Enter your email" required>
+        <input type="submit" id="submit" class="button" value="SUBMIT"></input> 
+      </form> 
+        </div>
+      </section>
+    <footer>
+      <h4 class="foot">Created by Ifeoma .O. 2021</h4>
+    </footer>
+    <script type="text/javascript">
+      function classToggle() {
+        const navs = document.querySelectorAll('.nav-link')
+        navs.forEach(nav => nav.classList.toggle('show'));
+        }
+
+        document.querySelector('.navbar-icon-toggle')
+        .addEventListener('click', classToggle);
+    </script>
+  </body>
+  
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
